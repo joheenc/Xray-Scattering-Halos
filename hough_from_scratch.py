@@ -6,10 +6,10 @@ from skimage.io import imread
 from PIL import Image
 
 img = imread('sample_images/sample1.png')
-print(img.shape)
+# print(img.shape)
 imggray = color.rgb2gray(img)
 imgubyte = img_as_ubyte(imggray)
-print(imgubyte.shape)
+# print(imgubyte.shape)
 
 # np.savetxt("img.txt", img)
 # np.savetxt("ubyte.txt", imgubyte)
@@ -22,5 +22,13 @@ for x in range(len(normimg)):
         if normimg[x][y] != 0:
             normimg[x][y] = 1
 
+# print(normimg.shape)
 # np.savetxt("normimg.txt", normimg, fmt='%1.0f')
+
+for x in range(len(normimg)):
+    for y in range(len(normimg[1])):
+        print(normimg[x][y], end="")
+    print()
+
+
 plt.imsave('image_outputs/normrecreated.png', normimg, cmap='Greys')
