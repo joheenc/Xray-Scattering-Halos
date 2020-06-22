@@ -7,6 +7,22 @@ double dist(int ay, int ax, int by, int bx) {
 	return sqrt(pow(ax-bx, 2.0)+pow(ay-by, 2.0));
 }
 
+int max(int arr[]) {
+	int max = arr[0];
+	for (int i = 1; i < sizeof(arr)/sizeof(int); i++)
+		if (arr[i] > max)
+			max = arr[i];
+	return max;
+}
+
+int min(int arr[]) {
+	int min = arr[0];
+	for (int i = 1; i < sizeof(arr)/sizeof(int); i++)
+		if (arr[i] < min)
+			min = arr[i];
+	return min;
+}
+
 void threelargest(int accumulator[], int acc_size, double radius, int xs[], int ys[]) { //TEMPORARY -- prints 3 most promising annuli for a given accumulator matrix
     int a, b, c, ai, bi, ci;																		//see int *hough(...) for more on this
 		a = b = c = 0;
@@ -30,22 +46,22 @@ int *hough(int rows, int cols, int img[rows][cols], double radius, int fuzzy, in
 	int *accumulator = malloc(photonCount * sizeof(int));
 	int acc;
 
-	for (int a = 0; a < photonCount; a++) { //iterates over photons in the image to check distances of other photons
-		int centerX = xs[a];
-		int centerY = ys[a];
+	for (int centralPhoton = 0; centralPhoton < photonCount; centralPhoton++) { //iterates over photons in the image to check distances of other photons
+		int centerX = xs[centralPhoton];
+		int centerY = ys[centralPhoton];
 		int acc = 0;
 		// printf("Center: (%d, %d)\n", centerX, centerY);
-		for (int b = 0; b < photonCount; b++) {
-			int photonX = xs[b];
-			int photonY = ys[b];
-			if (a != b) { //checks if distance of 2 compared photons falls within fuzzy distance range
+		for (int testPhoton = 0; testPhoton < photonCount; testPhoton++) {
+			int photonX = xs[testPhoton];
+			int photonY = ys[testPhoton];
+			if (centralPhoton != testPhoton) { //checks if distance of 2 compared photons falls within fuzzy distance range
 				 int distance = dist(photonY, photonX, centerY, centerX);
 				 // printf("[%d/%d] Checking photon: (%d, %d), dist = %d\n", a, photonCount, photonX, photonY, distance);
 				 if (distance >= radius-fuzzy && distance < radius+fuzzy)
 					 acc++;
 			}
 		}
-		accumulator[a] = acc;
+		accumulator[centralPhoton] = acc;
 	}
 
 	printf("Accumulator completed: \n"); //outputs the 3 "most promising" annuli locations--for now, that's just the accumulator cells with the highest count
@@ -54,32 +70,16 @@ int *hough(int rows, int cols, int img[rows][cols], double radius, int fuzzy, in
 	return accumulator;
 }
 
-int main(int rows, int cols, int data[][cols]) {
-	int numPhotons = 0, r, c;
-	for (r = 0; r < rows; r++)
-		for (c = 0; c < cols; c++)
-			if (data[r][c] > 0)
-				numPhotons++;
-
-	int photonxs[numPhotons], photonys[numPhotons]; //finds and saves locations of photons in the image in photonxs[] and photonys[]
-	int a = 0;
-	for (r = 0; r < rows; r++) {
-		for (c = 0; c < cols; c++) {
-			if (img[r][c] > 0) {
-				photonxs[a] = c;
-				photonys[a] = r;
-				a++;
-			}
-			if (a == numPhotons)
-				break;
-		}
-		if (a == numPhotons)
-			break;
-	}
-
+int main(int photonxs[], int photonys[]) {
+	int numPhotons = sizeof(photonxs)/sizeof(int);
+	int minRadius = 25; //the smallest radius size you want to test
+	int nRadii = 20; //number of radii you want to test
+	int fuzzy = 20; //number of pixels of "leeway" you want to give th photons	
 	int* houghCenters; //runs the fuzzy hough transform on the collected data with test radii spanning the size of the image
-	for (double radius = 25; radius < (rows < cols ? rows : cols) / 2.0; radius += (rows < cols ? rows : cols) / 20.0) {
-		houghCenters = hough(rows, cols, img, radius, 20, photonxs, photonys, numPhotons);
+	int rows = max(photonys) - min(photonys);
+	int cols = max(photonxs) - min(photonxs);
+	for (double radius = minRadius; radius < (rows < cols ? rows : cols) / 2.0; radius += (rows < cols ? rows : cols) / double(nRadii)) {
+		houghCenters = hough(rows, cols, img, radius, fuzzy, photonxs, photonys, numPhotons);
 		free(houghCenters);
 	}
 
