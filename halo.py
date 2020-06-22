@@ -3,7 +3,7 @@ from astropy.io import fits
 import numpy as np
 import os
 
-hdul = fits.open('testfile.evt.gz')
+hdul = fits.open('event.evt.gz')
 xs = hdul[1].data['X']
 ys = hdul[1].data['Y']
 photonCount = len(xs)
