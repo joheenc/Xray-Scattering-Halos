@@ -13,4 +13,4 @@ os.system(f"gcc -shared -o {filename}.so -fPIC {filename}.c")
 so_filepath = f"/Users/hunterholland/Documents/Research/Laidlaw/Pipelines/Xray-Scattering-Halos/{filename}.so"
 halo_object = CDLL(so_filepath)
 
-halo_object.hough(xs, yx, photonCount)
+halo_object.hough(xs, ys, photonCount)
