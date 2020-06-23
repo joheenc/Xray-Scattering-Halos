@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 from ctypes import CDLL, POINTER, c_int32
-# import ctypes
 from astropy.io import fits
 import numpy as np
 import os
