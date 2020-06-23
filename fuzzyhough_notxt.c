@@ -58,7 +58,7 @@ int *hough(int xs[], int ys[], int photonCount)
 	int nRadii = 20;	//number of radii you want to test
 	int fuzzy = 20;		//number of pixels of "leeway" you want to give th photons
 
-	printf("%d", xs[0]);
+
 	int rows = max(ys, photonCount) - min(ys, photonCount);
 	int cols = max(xs, photonCount) - min(xs, photonCount);
 	for (double radius = minRadius; radius < (rows < cols ? rows : cols) / 2.0; radius += (rows < cols ? rows : cols) / (double)nRadii)
