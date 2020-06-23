@@ -56,7 +56,7 @@ int *hough(int xs[], int ys[], int photonCount) {
 	int minRadius = (rows < cols ? rows : cols) / 4.0; //the smallest radius size you want to test
 	int maxRadius = (rows < cols ? rows : cols) / 1.5;
 	int nRadii = 20;	//number of radii you want to test
-	int fuzzy = 0.3;	//percent of radius leeway you want to give the photons
+	double fuzzy = 0.3;	//percent of radius leeway you want to give the photons
 
 	int maxAcc = 0, argmaxX = 0, argmaxY = 0, argmaxRad = 0;
 
