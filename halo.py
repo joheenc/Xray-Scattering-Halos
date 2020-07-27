@@ -35,15 +35,16 @@ def halo(filepath, saveimg=False):
     cxs = xs.ctypes.data_as(c_int_p)
     cys = ys.ctypes.data_as(c_int_p)
 
-    #set the types for the inputs and outputs to the C hough function
+    # set the types for the inputs and outputs to the C hough function
     houghlib.hough.argtypes = [c_int_p, c_int_p, c_int32]
     houghlib.hough.restype = c_int_p
-    #call the hough function and store the returned, "most likey" parameters in halo
+    # call the hough function and store the returned, "most likey" parameters in halo
     halo = houghlib.hough(cxs, cys, photonCount)
-    center = (halo[0], halo[1]) #storyes the (x, y) coordinates  of the center
-    r = halo[2] #stores the radius
+    # stores the (x, y) coordinates  of the center
+    center = (halo[0], halo[1])
+    r = halo[2]  # stores the radius
     houghlib.free(halo)
-    print('\nHighest accumulator halo: center = ' + #note that this only outputs the single highest accumulator-value halo
+    print('\nHighest accumulator halo: center = ' +  # note that this only outputs the single highest accumulator-value halo
           str(center) + ', r = ' + str(r))
 
     # create image with the most likely halo superimposed
