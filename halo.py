@@ -1,12 +1,14 @@
-import matplotlib.pyplot as plt
+import os
 from ctypes import CDLL, POINTER, c_int32
+import matplotlib.pyplot as plt
 from astropy.io import fits
 import numpy as np
-import os
 
 
 def halo(filepath, saveimg=False):
-    """This method iterates through the input event file and uses an implementation of the Fuzzy Hough Transform to determine a series of the most optimal halos of incident photons. It then superimposes the most optimal halo onto the image and returns a PNG file which gets saved to the event file's directory.
+    """This method iterates through the input event file and uses an implementation of the Fuzzy Hough Transform
+    to determine a series of the most optimal halos of incident photons. It then superimposes the most optimal
+    halo onto the image and returns a PNG file which gets saved to the event file's directory.
     """
 
     # get event data from FITS file
@@ -15,8 +17,8 @@ def halo(filepath, saveimg=False):
     ys = np.array(hdul[1].data['Y'])
     photonCount = len(xs)
 
-    # cpath should be the absolute path to the C file which does the Fuzzy Hough calculation (fuzzyhough_txt.c)
-    cpath = "/Users/hunterholland/Documents/Research/Laidlaw/Pipelines/Xray-Scattering-Halos/fuzzyhough_notxt"
+    # cpath should be the absolute path to the C file which does the Fuzzy Hough calculation (halo_calculation.c)
+    cpath = "/Users/hunterholland/Documents/Research/Laidlaw/Pipelines/Xray-Scattering-Halos/halo_calculation.c"
     cfilename = os.path.basename(cpath)
     sodir = os.path.dirname(filepath)
     sopath = f"{sodir}/{cfilename}"
@@ -39,11 +41,11 @@ def halo(filepath, saveimg=False):
     houghlib.hough.argtypes = [c_int_p, c_int_p, c_int32]
     houghlib.hough.restype = c_int_p
     # call the hough function and store the returned, "most likey" parameters in halo
-    halo = houghlib.hough(cxs, cys, photonCount)
+    haloinfo = houghlib.hough(cxs, cys, photonCount)
     # stores the (x, y) coordinates  of the center
-    center = (halo[0], halo[1])
-    r = halo[2]  # stores the radius
-    houghlib.free(halo)
+    center = (haloinfo[0], haloinfo[1])
+    r = haloinfo[2]  # stores the radius
+    houghlib.free(haloinfo)
     print('\nHighest accumulator halo: center = ' +  # note that this only outputs the single highest accumulator-value halo
           str(center) + ', r = ' + str(r))
 
