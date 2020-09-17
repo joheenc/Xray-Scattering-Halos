@@ -23,78 +23,62 @@ int min(int arr[], int len) {
 	return min;
 }
 
-int* threelargest(int accumulator[], int acc_size, double radius, int xs[], int ys[]) {	 //TEMPORARY -- prints 3 most promising annuli for a given accumulator matrix
-	int a, b, c, ai, bi, ci; //see int *hough(...) for more on this
-	a = b = c = 0;
-	for (int i = 0; i < acc_size; i++) {
-		if (accumulator[i] > accumulator[a]) {
-			c = b;
-			b = a;
-			a = i;
-		}
-		else if (accumulator[i] > accumulator[b]) {
-			c = b;
-			b = i;
-		}
-		else if (accumulator[i] > accumulator[c])
-			c = i;
-	}
-	printf("(%d, %d), r=%f: %d\n", xs[a], ys[a], radius, accumulator[a]);
-	printf("(%d, %d), r=%f: %d\n", xs[b], ys[b], radius, accumulator[b]);
-	printf("(%d, %d), r=%f: %d\n", xs[c], ys[c], radius, accumulator[c]);
-
-	int *ret = malloc(3 * sizeof(int));
-	ret[0] = accumulator[a];
-	ret[1] = xs[a];
-	ret[2] = ys[a];
-	return ret;
-}
-
 int *hough(int xs[], int ys[], int photonCount) {
 	int rows = max(ys, photonCount) - min(ys, photonCount);
 	int cols = max(xs, photonCount) - min(xs, photonCount);
-	int minRadius = (rows < cols ? rows : cols) / 4.0; //the smallest radius size you want to test
+	int minRadius = (rows < cols ? rows : cols) / 25.0; //the smallest radius size you want to test
 	int maxRadius = (rows < cols ? rows : cols) / 1.5;
+	int nCenters = (rows*cols)/10;	//number of different centers you test for each radius; they're uniformly spaced throughout the image
 	int nRadii = 20;	//number of radii you want to test
-	double fuzzy = 0.3;	//percent of radius leeway you want to give the photons
+	double alpha = 20;	//number of pixels leeway you want to give the photons; accumulator merit value falls off quadratically, scaled b/w 0 and 1 
+	double maxSigma = 0;
+	double photonDensity = (double)photonCount / (rows * cols);
+	printf("%d photons detected; image dimensions are %d x %d; trying %d centers\n", photonCount, rows, cols, nCenters);
+	
+	int centerX = 0, centerY = 0, stepAcc = 0, photonX = 0, photonY = 0, rCounter = 1;
+	double quadAcc, distance, tdist;
 
 	int maxAcc = 0, argmaxX = 0, argmaxY = 0, argmaxRad = 0;
+	double maxQuadAcc = 0;
 
-	for (double radius = minRadius; radius <= maxRadius; radius += (maxRadius - minRadius) / (double)nRadii) {
-		printf("Generating Accumulator for r=%f\n", radius); //allocates accumulator matrix
-		int *accumulator = malloc(photonCount * sizeof(int));
-
-		for (int centralPhoton = 0; centralPhoton < photonCount; centralPhoton++) { //iterates over photons in the image to check distances of other photons
-			int centerX = xs[centralPhoton];
-			int centerY = ys[centralPhoton];
-			int acc = 0;
+	for (double radius = minRadius; radius < maxRadius; radius += (maxRadius - minRadius) / (double)nRadii) {
+		if (rCounter % 10 == 1 || rCounter == nRadii)
+			printf("Generating Accumulator for r=%f (%d/%d)\n", radius, rCounter, nRadii); //allocates accumulator matrix
+		rCounter += 1;
+		//int *stepAccumulator = malloc(photonCount * sizeof(int));
+		for (int centralPixel = 0; centralPixel <= rows*cols; centralPixel += (rows*cols) / nCenters) { //iterates over points in the image to check distances of other photons
+			centerX = centralPixel % cols;
+			centerY = centralPixel / rows;
+			quadAcc = 0;
+			stepAcc = 0;
 			for (int testPhoton = 0; testPhoton < photonCount; testPhoton++) {
-				int photonX = xs[testPhoton];
-				int photonY = ys[testPhoton];
-				if (centralPhoton != testPhoton) { //checks if distance of 2 compared photons falls within fuzzy distance range
-					int distance = dist(photonY, photonX, centerY, centerX);
-					if (distance >= radius * (1-fuzzy) && distance <= radius * (1+fuzzy))
-						acc++;
+				photonX = xs[testPhoton];
+				photonY = ys[testPhoton];
+				distance = dist(photonY, photonX, centerY, centerX);
+				tdist = abs(radius - distance); //transformed distance
+				if (tdist <= alpha) {
+					quadAcc += pow((alpha-tdist)/(alpha), 2.0);
+					stepAcc += 1;
 				}
 			}
-			accumulator[centralPhoton] = acc;
+			if (quadAcc != 0)
+//				printf("(%d, %d), r = %f, acc=%f, sigma=%f\n", centerX, centerY, radius, quadAcc, (stepAcc) / (3.1416 * (pow(radius+alpha, 2) - pow(radius-alpha, 2))) / photonDensity);
+			if (quadAcc > maxQuadAcc) {
+				maxQuadAcc = quadAcc;
+				argmaxX = centerX;
+				argmaxY = centerY;
+				argmaxRad = radius;
+				maxSigma = (stepAcc) / (3.1416 * (pow(radius+alpha, 2) - pow(radius-alpha, 2))) / photonDensity;
+//				printf("new max: (%d, %d), r = %f, acc=%f, sigma=%f\n", centerX, centerY, radius, quadAcc, maxSigma); //formally, this isn't necessarily the max sigma, because the sigma is calculated using a step function cutoff, whereas the quadAcc is calculated with a quadratic cutoff
+			}
 		}
-
-		printf("Accumulator completed: \n"); //outputs the 3 "most promising" annuli locations--for now, that's just the accumulator cells with the highest count
-		int* halos = threelargest(accumulator, photonCount, radius, xs, ys);
-		if (halos[0] > maxAcc) {
-			maxAcc = halos[0];
-			argmaxX = halos[1];
-			argmaxY = halos[2];
-			argmaxRad = radius;
-		}
-		free(halos);
-		free(accumulator);
 	}
+	printf("exited accumulator loop\n");
 
-	int *ret = malloc(3 * sizeof(int));
-	ret[0] = argmaxX;
-	ret[1] = argmaxY;
-	ret[2] = argmaxRad;
+	int *ret = malloc(4 * sizeof(int));
+	ret[0] = (int)argmaxX;
+	ret[1] = (int)argmaxY;
+	ret[2] = (int)argmaxRad;
+	ret[3] = (int)maxSigma;
 	return ret;
 }

@@ -1,0 +1,502 @@
+237 photons detected; image dimensions are 592 x 603; trying 35697 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=208.500000 (11/20)
+Generating Accumulator for r=375.450000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (200, 428), r = 152, sigma = 6
+1041 photons detected; image dimensions are 612 x 618; trying 37821 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=216.000000 (11/20)
+Generating Accumulator for r=388.800000 (20/20)
+Generating Accumulator for r=408.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (396, 372), r = 196, sigma = 1
+1993 photons detected; image dimensions are 579 x 597; trying 34566 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=204.500000 (11/20)
+Generating Accumulator for r=367.850000 (20/20)
+Generating Accumulator for r=386.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (401, 348), r = 186, sigma = 5
+120 photons detected; image dimensions are 600 x 611; trying 36660 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=212.000000 (11/20)
+Generating Accumulator for r=381.200000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (314, 210), r = 230, sigma = 1
+785 photons detected; image dimensions are 648 x 674; trying 43675 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=228.500000 (11/20)
+Generating Accumulator for r=411.650000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (302, 345), r = 228, sigma = 1
+1874 photons detected; image dimensions are 678 x 631; trying 42781 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=222.500000 (11/20)
+Generating Accumulator for r=400.250000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (243, 434), r = 123, sigma = 8
+866 photons detected; image dimensions are 620 x 616; trying 38192 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=217.000000 (11/20)
+Generating Accumulator for r=390.700000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (306, 302), r = 294, sigma = 1
+105 photons detected; image dimensions are 579 x 572; trying 33118 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=201.500000 (11/20)
+Generating Accumulator for r=363.050000 (20/20)
+Generating Accumulator for r=381.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (230, 222), r = 201, sigma = 1
+78 photons detected; image dimensions are 542 x 561; trying 30406 centers
+Generating Accumulator for r=21.000000 (1/20)
+Generating Accumulator for r=191.000000 (11/20)
+Generating Accumulator for r=344.000000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (76, 521), r = 344, sigma = 0
+264 photons detected; image dimensions are 571 x 582; trying 33232 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=201.000000 (11/20)
+Generating Accumulator for r=362.100000 (20/20)
+Generating Accumulator for r=380.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (272, 238), r = 236, sigma = 1
+1179 photons detected; image dimensions are 613 x 619; trying 37944 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=216.000000 (11/20)
+Generating Accumulator for r=388.800000 (20/20)
+Generating Accumulator for r=408.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (314, 438), r = 158, sigma = 6
+693 photons detected; image dimensions are 568 x 616; trying 34988 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=200.000000 (11/20)
+Generating Accumulator for r=360.200000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (290, 179), r = 146, sigma = 5
+367 photons detected; image dimensions are 580 x 573; trying 33234 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=202.000000 (11/20)
+Generating Accumulator for r=364.000000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (411, 270), r = 166, sigma = 4
+328 photons detected; image dimensions are 592 x 588; trying 34809 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=207.500000 (11/20)
+Generating Accumulator for r=373.550000 (20/20)
+Generating Accumulator for r=392.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (280, 323), r = 262, sigma = 1
+114 photons detected; image dimensions are 602 x 581; trying 34976 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=205.000000 (11/20)
+Generating Accumulator for r=368.800000 (20/20)
+Generating Accumulator for r=387.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (317, 399), r = 204, sigma = 2
+391 photons detected; image dimensions are 608 x 618; trying 37574 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=214.500000 (11/20)
+Generating Accumulator for r=385.950000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (276, 283), r = 252, sigma = 1
+420 photons detected; image dimensions are 606 x 560; trying 33936 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=197.500000 (11/20)
+Generating Accumulator for r=355.450000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (180, 348), r = 179, sigma = 4
+282 photons detected; image dimensions are 621 x 610; trying 37881 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=215.000000 (11/20)
+Generating Accumulator for r=386.900000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (340, 199), r = 195, sigma = 3
+226 photons detected; image dimensions are 663 x 659; trying 43691 centers
+Generating Accumulator for r=26.000000 (1/20)
+Generating Accumulator for r=232.500000 (11/20)
+Generating Accumulator for r=418.350000 (20/20)
+Generating Accumulator for r=439.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (312, 340), r = 211, sigma = 2
+16 photons detected; image dimensions are 377 x 467; trying 17605 centers
+Generating Accumulator for r=15.000000 (1/20)
+Generating Accumulator for r=133.000000 (11/20)
+Generating Accumulator for r=239.200000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (275, 192), r = 203, sigma = 1
+423 photons detected; image dimensions are 606 x 613; trying 37147 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=214.000000 (11/20)
+Generating Accumulator for r=385.000000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (271, 195), r = 157, sigma = 3
+/mnt/c/Users/Joheen/Documents/research/Xray-Scattering-Halos/halo.py:55: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  _fig, ax = plt.subplots()
+874 photons detected; image dimensions are 683 x 674; trying 46034 centers
+Generating Accumulator for r=26.000000 (1/20)
+Generating Accumulator for r=237.500000 (11/20)
+Generating Accumulator for r=427.850000 (20/20)
+Generating Accumulator for r=449.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (356, 327), r = 258, sigma = 1
+109 photons detected; image dimensions are 563 x 587; trying 33048 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=198.500000 (11/20)
+Generating Accumulator for r=357.350000 (20/20)
+Generating Accumulator for r=375.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (305, 266), r = 269, sigma = 1
+175 photons detected; image dimensions are 570 x 585; trying 33345 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=201.000000 (11/20)
+Generating Accumulator for r=362.100000 (20/20)
+Generating Accumulator for r=380.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (350, 316), r = 218, sigma = 1
+576 photons detected; image dimensions are 624 x 617; trying 38500 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=217.500000 (11/20)
+Generating Accumulator for r=391.650000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (289, 270), r = 256, sigma = 1
+345 photons detected; image dimensions are 591 x 606; trying 35814 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=208.500000 (11/20)
+Generating Accumulator for r=375.450000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (384, 340), r = 189, sigma = 2
+74 photons detected; image dimensions are 609 x 615; trying 37453 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=215.000000 (11/20)
+Generating Accumulator for r=386.900000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (290, 275), r = 272, sigma = 1
+136 photons detected; image dimensions are 581 x 577; trying 33523 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=203.500000 (11/20)
+Generating Accumulator for r=365.950000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (270, 318), r = 257, sigma = 1
+69 photons detected; image dimensions are 597 x 544; trying 32476 centers
+Generating Accumulator for r=21.000000 (1/20)
+Generating Accumulator for r=191.500000 (11/20)
+Generating Accumulator for r=344.950000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (248, 376), r = 208, sigma = 1
+333 photons detected; image dimensions are 655 x 643; trying 42116 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=226.500000 (11/20)
+Generating Accumulator for r=407.850000 (20/20)
+Generating Accumulator for r=428.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (457, 315), r = 145, sigma = 2
+197 photons detected; image dimensions are 602 x 605; trying 36421 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=212.500000 (11/20)
+Generating Accumulator for r=382.150000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (360, 310), r = 231, sigma = 1
+87 photons detected; image dimensions are 584 x 537; trying 31360 centers
+Generating Accumulator for r=21.000000 (1/20)
+Generating Accumulator for r=189.500000 (11/20)
+Generating Accumulator for r=341.150000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (242, 298), r = 240, sigma = 1
+621 photons detected; image dimensions are 619 x 603; trying 37325 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=213.000000 (11/20)
+Generating Accumulator for r=383.100000 (20/20)
+Generating Accumulator for r=402.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (212, 356), r = 175, sigma = 4
+256 photons detected; image dimensions are 590 x 602; trying 35518 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=208.000000 (11/20)
+Generating Accumulator for r=374.500000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (292, 280), r = 282, sigma = 1
+481 photons detected; image dimensions are 612 x 618; trying 37821 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=216.000000 (11/20)
+Generating Accumulator for r=388.800000 (20/20)
+Generating Accumulator for r=408.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (336, 346), r = 254, sigma = 1
+195 photons detected; image dimensions are 602 x 621; trying 37384 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=212.500000 (11/20)
+Generating Accumulator for r=382.150000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (362, 308), r = 231, sigma = 1
+166 photons detected; image dimensions are 587 x 585; trying 34339 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=206.500000 (11/20)
+Generating Accumulator for r=371.650000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (140, 187), r = 151, sigma = 2
+316 photons detected; image dimensions are 578 x 563; trying 32541 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=198.500000 (11/20)
+Generating Accumulator for r=357.350000 (20/20)
+Generating Accumulator for r=375.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (332, 425), r = 180, sigma = 2
+830 photons detected; image dimensions are 653 x 632; trying 41269 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=223.000000 (11/20)
+Generating Accumulator for r=401.200000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (298, 267), r = 223, sigma = 1
+1445 photons detected; image dimensions are 647 x 641; trying 41472 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=226.000000 (11/20)
+Generating Accumulator for r=406.900000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (352, 384), r = 205, sigma = 1
+627 photons detected; image dimensions are 634 x 629; trying 39878 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=222.000000 (11/20)
+Generating Accumulator for r=399.300000 (20/20)
+Generating Accumulator for r=419.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (305, 293), r = 281, sigma = 1
+22271 photons detected; image dimensions are 708 x 730; trying 51684 centers
+Generating Accumulator for r=28.000000 (1/20)
+Generating Accumulator for r=250.000000 (11/20)
+Generating Accumulator for r=449.800000 (20/20)
+Generating Accumulator for r=472.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (280, 320), r = 28, sigma = 56
+275 photons detected; image dimensions are 604 x 652; trying 39380 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=213.000000 (11/20)
+Generating Accumulator for r=383.100000 (20/20)
+Generating Accumulator for r=402.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (312, 274), r = 231, sigma = 1
+2186 photons detected; image dimensions are 668 x 642; trying 42885 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=226.500000 (11/20)
+Generating Accumulator for r=407.850000 (20/20)
+Generating Accumulator for r=428.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (292, 326), r = 226, sigma = 1
+1532 photons detected; image dimensions are 624 x 616; trying 38438 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=217.000000 (11/20)
+Generating Accumulator for r=390.700000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (308, 338), r = 274, sigma = 1
+456 photons detected; image dimensions are 612 x 616; trying 37699 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=216.000000 (11/20)
+Generating Accumulator for r=388.800000 (20/20)
+Generating Accumulator for r=408.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (164, 418), r = 196, sigma = 1
+1363 photons detected; image dimensions are 605 x 619; trying 37449 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=213.500000 (11/20)
+Generating Accumulator for r=384.050000 (20/20)
+Generating Accumulator for r=403.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (247, 427), r = 156, sigma = 2
+272 photons detected; image dimensions are 597 x 581; trying 34685 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=205.000000 (11/20)
+Generating Accumulator for r=368.800000 (20/20)
+Generating Accumulator for r=387.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (222, 193), r = 186, sigma = 2
+409 photons detected; image dimensions are 610 x 614; trying 37454 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=215.000000 (11/20)
+Generating Accumulator for r=386.900000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (336, 353), r = 195, sigma = 3
+2739 photons detected; image dimensions are 605 x 607; trying 36723 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=213.500000 (11/20)
+Generating Accumulator for r=384.050000 (20/20)
+Generating Accumulator for r=403.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (341, 428), r = 156, sigma = 5
+1976 photons detected; image dimensions are 592 x 589; trying 34868 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=207.500000 (11/20)
+Generating Accumulator for r=373.550000 (20/20)
+Generating Accumulator for r=392.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (244, 422), r = 152, sigma = 7
+1906 photons detected; image dimensions are 612 x 618; trying 37821 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=216.000000 (11/20)
+Generating Accumulator for r=388.800000 (20/20)
+Generating Accumulator for r=408.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (336, 205), r = 158, sigma = 5
+186 photons detected; image dimensions are 571 x 565; trying 32261 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=199.000000 (11/20)
+Generating Accumulator for r=358.300000 (20/20)
+Generating Accumulator for r=376.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (280, 293), r = 269, sigma = 1
+192 photons detected; image dimensions are 599 x 589; trying 35281 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=207.500000 (11/20)
+Generating Accumulator for r=373.550000 (20/20)
+Generating Accumulator for r=392.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (319, 314), r = 281, sigma = 1
+92 photons detected; image dimensions are 599 x 570; trying 34143 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=201.000000 (11/20)
+Generating Accumulator for r=362.100000 (20/20)
+Generating Accumulator for r=380.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (300, 322), r = 236, sigma = 1
+352 photons detected; image dimensions are 578 x 615; trying 35547 centers
+Generating Accumulator for r=23.000000 (1/20)
+Generating Accumulator for r=204.000000 (11/20)
+Generating Accumulator for r=366.900000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (205, 248), r = 185, sigma = 2
+473 photons detected; image dimensions are 614 x 600; trying 36840 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=212.000000 (11/20)
+Generating Accumulator for r=381.200000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (220, 232), r = 174, sigma = 2
+56 photons detected; image dimensions are 538 x 554; trying 29805 centers
+Generating Accumulator for r=21.000000 (1/20)
+Generating Accumulator for r=189.500000 (11/20)
+Generating Accumulator for r=341.150000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (366, 253), r = 273, sigma = 1
+199 photons detected; image dimensions are 652 x 551; trying 35925 centers
+Generating Accumulator for r=22.000000 (1/20)
+Generating Accumulator for r=194.500000 (11/20)
+Generating Accumulator for r=349.750000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (279, 297), r = 263, sigma = 1
+37 photons detected; image dimensions are 541 x 567; trying 30674 centers
+Generating Accumulator for r=21.000000 (1/20)
+Generating Accumulator for r=190.500000 (11/20)
+Generating Accumulator for r=343.050000 (20/20)
+Generating Accumulator for r=360.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (353, 420), r = 122, sigma = 3
+91 photons detected; image dimensions are 529 x 607; trying 32110 centers
+Generating Accumulator for r=21.000000 (1/20)
+Generating Accumulator for r=186.500000 (11/20)
+Generating Accumulator for r=335.450000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (424, 101), r = 252, sigma = 1
+678 photons detected; image dimensions are 615 x 620; trying 38130 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=217.000000 (11/20)
+Generating Accumulator for r=390.700000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (220, 419), r = 255, sigma = 1
+1540 photons detected; image dimensions are 629 x 707; trying 44470 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=222.000000 (11/20)
+Generating Accumulator for r=399.300000 (20/20)
+Generating Accumulator for r=419.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (472, 342), r = 123, sigma = 4
+1097 photons detected; image dimensions are 671 x 677; trying 45426 centers
+Generating Accumulator for r=26.000000 (1/20)
+Generating Accumulator for r=236.500000 (11/20)
+Generating Accumulator for r=425.950000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (399, 255), r = 236, sigma = 1
+7174 photons detected; image dimensions are 608 x 612; trying 37209 centers
+Generating Accumulator for r=24.000000 (1/20)
+Generating Accumulator for r=214.500000 (11/20)
+Generating Accumulator for r=385.950000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (408, 197), r = 157, sigma = 4
+14713 photons detected; image dimensions are 647 x 701; trying 45354 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=228.000000 (11/20)
+Generating Accumulator for r=410.700000 (20/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (481, 303), r = 187, sigma = 4
+10737 photons detected; image dimensions are 637 x 638; trying 40640 centers
+Generating Accumulator for r=25.000000 (1/20)
+Generating Accumulator for r=224.500000 (11/20)
+Generating Accumulator for r=404.050000 (20/20)
+Generating Accumulator for r=424.000000 (21/20)
+exited accumulator loop
+
+Highest accumulator halo: center = (266, 424), r = 144, sigma = 8
