@@ -22,7 +22,7 @@ def halo(filepath, saveimg=False, outfile='out.png'):
     photonCount = len(xs)
 
     # cpath should be the absolute path to the C file which does the Fuzzy Hough calculation (halo_calculation.c)
-    cpath = "/mnt/c/Users/Joheen/Documents/research/Xray-Scattering-Halos/halo_calculation"
+    cpath = "halo_calculation"
     cfilename = os.path.basename(cpath)
     # create C library files in the file's directory
     os.system(
